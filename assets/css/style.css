@@ -1,0 +1,259 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-family: sans-serif;
+}
+
+#imagem-fundo {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#imagem-fundo::before {
+    content: '';
+    background-image: url(../../img/setup.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* HEADER */
+.cabecalho-imagem img {
+    width: 20rem;
+    padding: 2.5rem 0;
+}
+
+#menu-principal a {
+    color: white;
+}
+
+#topo {
+    position: fixed;
+    width: 100vw;
+}
+
+#topo.scrolled {
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+#topo.scrolled a {
+    color: black;
+}
+
+/* LOGO */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.2rem 1.5rem;
+}
+
+/* CABEÇALHO A DIREITA */
+.hamburger-btn {
+    display: none;
+}
+.cabecalho-direita {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80rem;
+}
+
+/* CABEÇALHO MENU PRINCIPAL */
+#menu-principal a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-right: 2.5rem;
+}
+
+.redes-sociais img {
+    width: 3rem;
+    margin-right: 1.5rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+
+/* HOME */
+#home {
+    text-align: center;
+    padding-top: 40rem;
+    font-size: 2.4rem;
+}
+
+#home h1 {
+    text-shadow: 0.2rem 0.4rem 0.2rem black;
+}
+
+/* SOBRE */
+.article-titulo {
+    text-align: center;
+    font-size: 3rem;
+    padding: 15rem 0 5rem 0;
+}
+
+.article-titulo::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 0.5rem;
+    background-color: #FFD700;
+    margin: 1rem auto 0;
+}
+
+.article-conteudo,
+.conteudo-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-sobre {
+    gap: 5rem;
+    font-size: 1.8rem;
+    margin: auto 20%;
+
+}
+
+.conteudo-sobre img {
+    width: 22rem;
+    border-radius: 1.5rem;
+}
+
+.conteudo-sobre p,
+h3 {
+    padding-bottom: 2rem;
+}
+
+/* SERVIÇOS */
+.box-servico {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 3rem;
+    margin: 0 15%;
+    text-align: center;
+    width: 100rem;
+    color: white;
+}
+
+.gap-box-servicos {
+    border: 4px solid white;
+    border-radius: 1.5rem;
+    padding: 4rem 5rem;
+}
+
+.gap-box-servicos img {
+    width: 5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.gap-box-servicos h3 {
+    font-size: 2.6rem;
+    padding-block: 1.5rem;
+}
+
+.gap-box-servicos p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+/* PORTIFÓLIO */
+#filtros {
+    display: flex;
+    justify-content: center;
+}
+#filtros button {
+    margin: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem 15rem;
+}
+
+.item-galeria {
+    
+    width: 40rem;
+    /* Apenas para exemplo */
+    display: block;
+    /* Itens visíveis por padrão */
+}
+
+.item-galeria.escondido {
+    display: none;
+    /* Classe para esconder itens */
+}
+
+.item-galeria img {
+    max-width: 100%;
+}
+
+/* CONTATOS */
+.conteudo-rodape {
+    text-align: center;
+}
+
+.conteudo-rodape p {
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.conteudo-rodape h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+#email,
+#phone {
+    font-size: 2rem;
+    padding-block: 1.5rem;
+}
+
+#email,
+#phone,
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.rodape #contato {
+    padding-bottom: 8rem;
+}
+
+/* RODAPÉ */
+#direitos-autorais {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/* WHATSAPP */
+#botao-whatsapp {
+    position: fixed;
+    bottom: 4rem;
+    right: 3rem;
+}
+#botao-whatsapp img {
+    width: 7rem;
+}
